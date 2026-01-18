@@ -1,0 +1,486 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+    <title>~*~ Welcome to vintagestuff.fun ~*~</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <style type="text/css">
+        /* Basic Reset - CSS1 Compatible */
+        body {
+            background-color: #000080;
+            color: #00FF00;
+            font-family: "Times New Roman", Times, serif;
+            margin: 0;
+            padding: 10px;
+        }
+
+        /* Marquee container */
+        .marquee-container {
+            background-color: #FF0000;
+            color: #FFFF00;
+            padding: 5px;
+            font-weight: bold;
+        }
+
+        /* Main content table */
+        .main-table {
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            background-color: #C0C0C0;
+            border: 5px ridge #808080;
+        }
+
+        /* Header cell */
+        .header-cell {
+            background-color: #ffc800;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .header-cell h1 {
+            color: #000000;
+            font-size: 28px;
+            margin: 0;
+        }
+
+        .rainbow-text {
+            color: #FF0000;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .sparkle-divider {
+            text-align: center;
+            font-size: 20px;
+            letter-spacing: 10px;
+            color: #FFFF00;
+        }
+
+        /* Navigation sidebar */
+        .sidebar {
+            background-color: #808080;
+            width: 150px;
+            vertical-align: top;
+            padding: 10px;
+            border-right: 3px groove #C0C0C0;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #0000FF;
+            background-color: #C0C0C0;
+            border: 2px outset #FFFFFF;
+            padding: 5px;
+            margin-top: 5px;
+            margin-bottom: 5px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .sidebar a:hover {
+            border: 2px inset #FFFFFF;
+            background-color: #A0A0A0;
+        }
+
+        .sidebar a:visited {
+            color: #800080;
+        }
+
+        /* Content area */
+        .content {
+            background-color: #FFFFFF;
+            padding: 15px;
+            vertical-align: top;
+            color: #000000;
+        }
+
+        .content h2 {
+            color: #FF0000;
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            border-bottom: 2px dashed #FF0000;
+        }
+
+        /* Construction section */
+        .construction {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .construction-text {
+            color: #FF0000;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        /* Fancy HR replacement */
+        .fancy-hr {
+            height: 5px;
+            background-color: #FF00FF;
+            border: 1px solid #000000;
+        }
+
+        /* Hit counter */
+        .hit-counter {
+            background-color: #000000;
+            color: #00FF00;
+            font-family: "Courier New", monospace;
+            padding: 5px;
+            border: 2px inset #808080;
+        }
+
+        /* Button style */
+        .button-88x31 {
+            width: 88px;
+            height: 31px;
+            background-color: #FFCC00;
+            border: 2px outset #FFFFFF;
+            font-size: 10px;
+            font-weight: bold;
+            text-align: center;
+            color: #000000;
+            text-decoration: none;
+        }
+
+        /* Image frame */
+        .framed-image {
+            border: 5px ridge #C0C0C0;
+            padding: 5px;
+            background-color: #FFFFFF;
+        }
+
+        /* Links */
+        .content a {
+            color: #0000FF;
+        }
+
+        .content a:visited {
+            color: #800080;
+        }
+
+        .content a:hover {
+            color: #FF0000;
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #000000;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Webring */
+        .webring {
+            background-color: #FFFFCC;
+            border: 2px solid #000000;
+            padding: 10px;
+            text-align: center;
+            color: #000000;
+        }
+
+        .webring a {
+            color: #0000FF;
+        }
+
+        /* Guestbook form */
+        .guestbook-form {
+            background-color: #E0E0E0;
+            border: 2px inset #808080;
+            padding: 10px;
+        }
+
+        .guestbook-form input, 
+        .guestbook-form textarea {
+            border: 2px inset #808080;
+            padding: 3px;
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .submit-btn {
+            border: 2px outset #C0C0C0;
+            background-color: #C0C0C0;
+            cursor: pointer;
+        }
+
+        /* Status badges */
+        .status-badges {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .status-badges a {
+            margin: 2px;
+        }
+
+        .status-badges img {
+            border: 0;
+            vertical-align: middle;
+        }
+
+        /* Awards */
+        .awards {
+            text-align: center;
+            background-color: #FFFFCC;
+            border: 3px double #000000;
+            padding: 10px;
+        }
+
+        .award-badge {
+            width: 80px;
+            height: 80px;
+            background-color: #FFD700;
+            border: 3px solid #8B4513;
+            font-size: 10px;
+            font-weight: bold;
+            color: #000000;
+            text-align: center;
+            vertical-align: middle;
+            padding-top: 25px;
+        }
+
+        /* Guestbook entries */
+        .guestbook-entry {
+            background-color: #F0F0F0;
+            border-left: 3px solid #0000FF;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Marquee Banner - Real marquee tag for old browsers -->
+<div class="marquee-container">
+    <marquee behavior="scroll" direction="left" scrollamount="5">
+        <font color="#FFFF00"><b>*** WELCOME TO MY AWESOME HOMEPAGE!!! *** LAST UPDATED: JANUARY 17, 2026 *** BEST VIEWED IN NETSCAPE NAVIGATOR 4.0 AT 800x600 ***</b></font>
+    </marquee>
+</div>
+
+<!-- Main Table Layout -->
+<table class="main-table" cellpadding="0" cellspacing="0" border="0" align="center">
+    
+    <!-- Header -->
+    <tr>
+        <td colspan="2" class="header-cell" bgcolor="#FF00FF">
+            <h1>
+                <font color="#000000">~*~*~ WELCOME TO VINTAGESTUFF.FUN ~*~*~</font>
+            </h1>
+            <p class="rainbow-text">
+                <font color="#FF0000">Your #1 Source for Cool Vintage Stuff on the Web!</font>
+            </p>
+            <div class="sparkle-divider">
+                <font color="#0dff00">**********</font>
+            </div>
+        </td>
+    </tr>
+    
+    <tr>
+        <!-- Sidebar Navigation -->
+        <td class="sidebar" bgcolor="#808080" width="150" valign="top">
+            <center>
+                <b><font color="#000000">NAVIGATION</font></b>
+                <hr>
+            </center>
+            
+            <a href="#home"><font color="#0000FF">Home</font></a>
+            <a href="#about"><font color="#0000FF">About me</font></a>
+            <a href="#links"><font color="#0000FF">Cool links</font></a>
+            
+            
+            
+            <hr>
+            
+            <center>
+                <p><b><font color="#000000">HIT COUNTER:</font></b></p>
+                <span class="hit-counter">
+                    <font color="#00FF00">00004582</font>
+                </span>
+            </center>
+            
+            <hr>
+            
+            
+        <!-- Main Content -->
+        <td class="content" bgcolor="#FFFFFF" valign="top">
+            
+            <!-- Under Construction Banner -->
+            <div class="construction">
+                <table border="0" cellpadding="5" cellspacing="0" align="center">
+                    <tr>
+                        <td bgcolor="#FFFF00">
+                            <img src="images/construct.gif" width="100" height="50" alt="Under Construction" onerror="this.alt='[CONSTRUCTION]'; this.style.display='none';">
+                        </td>
+                        <td>
+                            <blink>
+                                <font color="#FF0000" size="+2"><b>UNDER CONSTRUCTION</b></font>
+                            </blink>
+                        </td>
+                        <td bgcolor="#FFFF00">
+                            <img src="images/construct.gif" width="100" height="50" alt="Under Construction" onerror="this.alt='[CONSTRUCTION]'; this.style.display='none';">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <hr class="fancy-hr" noshade size="5" color="#FF00FF">
+
+            <!-- About Section -->
+            <a name="about"></a>
+            <h2><font color="#FF0000" face="Comic Sans MS, cursive">About Me!!!</font></h2>
+            
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td valign="top">
+                        <table class="framed-image" cellpadding="5" cellspacing="0" border="0" bgcolor="#FFFFFF">
+                            <tr>
+                                <td>
+                                    <img src="myphoto.gif" width="150" height="150" alt="My Photo" onerror="this.alt='[MY PHOTO]'; this.style.background='#4ECDC4';">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td valign="top" style="padding-left: 15px;">
+                        &nbsp;&nbsp;&nbsp;
+                    </td>
+                    <td valign="top">
+                        <p><b>Name:</b> Artem Syrnikov</p>
+                        <p><b>Age:</b> 14 years old</p>
+                        <p><b>Location:</b> Moscow, RU</p>
+                        <p><b>Hobbies:</b> Computers, Video Games, HTML</p>
+                    </td>
+                </tr>
+            </table>
+
+            <p>Hey there! Welcome to my little corner of the 
+            <font color="#FF00FF">World Wide Web</font>! I created this page using 
+            <i>Notepad</i> and lots of patience. I hope you enjoy your stay!</p>
+
+            <hr class="fancy-hr" noshade size="5" color="#FF00FF">
+
+            <!-- Cool Links -->
+            <a name="links"></a>
+            <h2><font color="#FF0000" face="Comic Sans MS, cursive">Cool Links!!!</font></h2>
+            
+            <ul>
+                <li><font color="#FFD700">&#9733;</font> <a href="http://frogfind.com"><font color="#0000FF">FrogFind - My Favorite Vintage Search Engine</font></a></li>
+                <li><font color="#FFD700">&#9733;</font> <a href="http://oldavista.com"><font color="#0000FF">Old'a Vista - The most powerful guide to the old web</font></a></li>
+                <li><font color="#FFD700">&#9733;</font> <a href="http://theoldnet.com"><font color="#0000FF">TheOldNet - Browse the web like it's 1999</font></a></li>
+                <li><font color="#FFD700">&#9733;</font> <a href="http://wiby.me"><font color="#0000FF">Wiby - Search engine for classic websites</font></a></li>
+            </ul>
+
+            <hr class="fancy-hr" noshade size="5" color="#FF00FF">
+
+            
+
+            <hr class="fancy-hr" noshade size="5" color="#FF00FF">
+
+            <!-- Guestbook -->
+            <a name="guestbook"></a>
+            <h2><font color="#FF0000" face="Comic Sans MS, cursive">Sign My Guestbook!!!</font></h2>
+           
+
+            <hr class="fancy-hr" noshade size="5" color="#FF00FF">
+
+            <!-- Contact -->
+            <a name="contact"></a>
+            <h2><font color="#FF0000" face="Comic Sans MS, cursive">Contact Me!!!</font></h2>
+            
+            <table border="1" cellpadding="10" cellspacing="0" bgcolor="#FFFFEE" width="100%">
+                <tr>
+                    <td>
+                        <p>
+                           XMPP: artemka009@jabber.ru
+                            
+                            </a>
+                      
+                        <p>IRC: <b>#vintagestuff</b> on irc.libera.chat</p>
+                    </td>
+                </tr>
+            </table>
+
+            <hr class="fancy-hr" noshade size="5" color="#FF00FF">
+
+            <!-- Status Badges -->
+            <div class="status-badges">
+                <table border="0" cellpadding="2" cellspacing="2" align="center">
+                    <tr>
+                        <td>
+                            <a href="#">
+                                <img src="images/netscap4.gif" width="88" height="31" border="0" alt="Netscape 4">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="#">
+                                <img src="images/800x600.gif" width="88" height="31" border="0" alt="800x600">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="http://oldavista.com">
+                                <img src="images/button.gif" width="88" height="31" border="0" alt="Old'a Vista">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="http://mirc.com">
+                                <img src="images/mircban.gif" width="88" height="31" border="0" alt="mIRC">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="http://diet.crosstalk.im">
+                                <img src="images/CT.gif" width="88" height="31" border="0" alt="CrossTalk">
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+        </td>
+    </tr>
+
+    <!-- Footer -->
+    <tr>
+        <td colspan="2" class="footer" bgcolor="#000000">
+            <p>
+                <font color="#FFFF00">&#9733;</font>
+                <font color="#FFFFFF">
+                    This page is best viewed in Netscape Navigator 4.0 or Internet Explorer 4.0
+                </font>
+                <font color="#FFFF00">&#9733;</font>
+            </p>
+            <p>
+                <font color="#FFFFFF">&copy; 2026 vintagestuff.fun - All Rights Reserved</font>
+            </p>
+            <p>
+                <font color="#FFFFFF">Made with</font> 
+                <font color="#FF0000">&#9829;</font> 
+                <font color="#FFFFFF">and <b>Notepad</b></font>
+            </p>
+            <p>
+                <a href="#">
+                    <img src="images/netscape_now.gif" width="88" height="31" border="0" alt="Netscape Now!">
+                </a>
+                <a href="#">
+                    <img src="images/ie_logo.gif" width="88" height="31" border="0" alt="Internet Explorer">
+                </a>
+                <a href="#">
+                    <img src="images/notepad.gif" width="88" height="31" border="0" alt="Made with Notepad">
+                </a>
+            </p>
+        </td>
+    </tr>
+</table>
+
+<!-- Old browser compatibility message -->
+<!--[if lt IE 6]>
+<center>
+<p><font color="#FFFF00">You are using a very old browser. This page should still work!</font></p>
+</center>
+<![endif]-->
+
+</body>
+</html>
